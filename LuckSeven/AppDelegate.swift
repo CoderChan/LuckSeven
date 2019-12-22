@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupKeyWindow() -> Void {
-        let root: SuperViewController = SuperViewController()
+        let controller: SuperViewController = SuperViewController()
+        let root: RootNavigationController = RootNavigationController(rootViewController: controller)
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = .gray
         self.window?.rootViewController = root
