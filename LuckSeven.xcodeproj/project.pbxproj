@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */; };
+		3BE3BF3923AF4DCE00542392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3823AF4DCE00542392 /* SceneDelegate.swift */; };
+		3BE3BF3B23AF4DCE00542392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3A23AF4DCE00542392 /* ViewController.swift */; };
+		3BE3BF3E23AF4DCF00542392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3C23AF4DCF00542392 /* Main.storyboard */; };
+		3BE3BF4023AF4DD500542392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3F23AF4DD500542392 /* Assets.xcassets */; };
+		3BE3BF4323AF4DD500542392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE3BF4123AF4DD500542392 /* LaunchScreen.storyboard */; };
+		3BE3BF4E23AF4DD500542392 /* LuckSevenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF4D23AF4DD500542392 /* LuckSevenTests.swift */; };
+		3BE3BF5923AF4DD500542392 /* LuckSevenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF5823AF4DD500542392 /* LuckSevenUITests.swift */; };
+		BFCCCCFBB5555F07DA837B70 /* Pods_LuckSevenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7150EDC710E4641FC8221A44 /* Pods_LuckSevenUITests.framework */; };
+		C5C16998FD1759F9270E40DA /* Pods_LuckSevenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52498E4ECE18882D347AD0A7 /* Pods_LuckSevenTests.framework */; };
+		D9AF6598C5B910B41AFD9F1D /* Pods_LuckSeven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3DD6FDD55A1E6D97AA0B50 /* Pods_LuckSeven.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BE3BF4A23AF4DD500542392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BE3BF2B23AF4DCE00542392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BE3BF3223AF4DCE00542392;
+			remoteInfo = LuckSeven;
+		};
+		3BE3BF5523AF4DD500542392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BE3BF2B23AF4DCE00542392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BE3BF3223AF4DCE00542392;
+			remoteInfo = LuckSeven;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1726BFBAE544EDF8F957C1B3 /* Pods-LuckSeven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckSeven.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven.release.xcconfig"; sourceTree = "<group>"; };
+		3BE3BF3323AF4DCE00542392 /* LuckSeven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckSeven.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BE3BF3823AF4DCE00542392 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3BE3BF3A23AF4DCE00542392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BE3BF3D23AF4DCF00542392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BE3BF3F23AF4DD500542392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BE3BF4223AF4DD500542392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BE3BF4423AF4DD500542392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BE3BF4923AF4DD500542392 /* LuckSevenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckSevenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE3BF4D23AF4DD500542392 /* LuckSevenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckSevenTests.swift; sourceTree = "<group>"; };
+		3BE3BF4F23AF4DD500542392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BE3BF5423AF4DD500542392 /* LuckSevenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckSevenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE3BF5823AF4DD500542392 /* LuckSevenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckSevenUITests.swift; sourceTree = "<group>"; };
+		3BE3BF5A23AF4DD500542392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40932293EFAB98A3CFA91FDC /* Pods-LuckSevenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckSevenUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuckSevenUITests/Pods-LuckSevenUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52498E4ECE18882D347AD0A7 /* Pods_LuckSevenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckSevenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7150EDC710E4641FC8221A44 /* Pods_LuckSevenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckSevenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		901A8E2C1CE9F7EBE12CA2DF /* Pods-LuckSevenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckSevenUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckSevenUITests/Pods-LuckSevenUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A73754D418D9112FA9E4E58B /* Pods-LuckSevenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckSevenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuckSevenTests/Pods-LuckSevenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3DD6FDD55A1E6D97AA0B50 /* Pods_LuckSeven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckSeven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF909B8BB1DC91853E72F955 /* Pods-LuckSeven.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckSeven.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven.debug.xcconfig"; sourceTree = "<group>"; };
+		E30F13674FE04998C444CD72 /* Pods-LuckSevenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckSevenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckSevenTests/Pods-LuckSevenTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BE3BF3023AF4DCE00542392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AF6598C5B910B41AFD9F1D /* Pods_LuckSeven.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE3BF4623AF4DD500542392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C16998FD1759F9270E40DA /* Pods_LuckSevenTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE3BF5123AF4DD500542392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCCCCFBB5555F07DA837B70 /* Pods_LuckSevenUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23A41BABFC430C110730768D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF3DD6FDD55A1E6D97AA0B50 /* Pods_LuckSeven.framework */,
+				52498E4ECE18882D347AD0A7 /* Pods_LuckSevenTests.framework */,
+				7150EDC710E4641FC8221A44 /* Pods_LuckSevenUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BE3BF2A23AF4DCE00542392 = {
+			isa = PBXGroup;
+			children = (
+				3BE3BF3523AF4DCE00542392 /* LuckSeven */,
+				3BE3BF4C23AF4DD500542392 /* LuckSevenTests */,
+				3BE3BF5723AF4DD500542392 /* LuckSevenUITests */,
+				3BE3BF3423AF4DCE00542392 /* Products */,
+				7B3895D7DB0DF3795BB56786 /* Pods */,
+				23A41BABFC430C110730768D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BE3BF3423AF4DCE00542392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BE3BF3323AF4DCE00542392 /* LuckSeven.app */,
+				3BE3BF4923AF4DD500542392 /* LuckSevenTests.xctest */,
+				3BE3BF5423AF4DD500542392 /* LuckSevenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BE3BF3523AF4DCE00542392 /* LuckSeven */ = {
+			isa = PBXGroup;
+			children = (
+				3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */,
+				3BE3BF3823AF4DCE00542392 /* SceneDelegate.swift */,
+				3BE3BF3A23AF4DCE00542392 /* ViewController.swift */,
+				3BE3BF3C23AF4DCF00542392 /* Main.storyboard */,
+				3BE3BF3F23AF4DD500542392 /* Assets.xcassets */,
+				3BE3BF4123AF4DD500542392 /* LaunchScreen.storyboard */,
+				3BE3BF4423AF4DD500542392 /* Info.plist */,
+			);
+			path = LuckSeven;
+			sourceTree = "<group>";
+		};
+		3BE3BF4C23AF4DD500542392 /* LuckSevenTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BE3BF4D23AF4DD500542392 /* LuckSevenTests.swift */,
+				3BE3BF4F23AF4DD500542392 /* Info.plist */,
+			);
+			path = LuckSevenTests;
+			sourceTree = "<group>";
+		};
+		3BE3BF5723AF4DD500542392 /* LuckSevenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BE3BF5823AF4DD500542392 /* LuckSevenUITests.swift */,
+				3BE3BF5A23AF4DD500542392 /* Info.plist */,
+			);
+			path = LuckSevenUITests;
+			sourceTree = "<group>";
+		};
+		7B3895D7DB0DF3795BB56786 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF909B8BB1DC91853E72F955 /* Pods-LuckSeven.debug.xcconfig */,
+				1726BFBAE544EDF8F957C1B3 /* Pods-LuckSeven.release.xcconfig */,
+				A73754D418D9112FA9E4E58B /* Pods-LuckSevenTests.debug.xcconfig */,
+				E30F13674FE04998C444CD72 /* Pods-LuckSevenTests.release.xcconfig */,
+				40932293EFAB98A3CFA91FDC /* Pods-LuckSevenUITests.debug.xcconfig */,
+				901A8E2C1CE9F7EBE12CA2DF /* Pods-LuckSevenUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BE3BF3223AF4DCE00542392 /* LuckSeven */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BE3BF5D23AF4DD500542392 /* Build configuration list for PBXNativeTarget "LuckSeven" */;
+			buildPhases = (
+				2AB28E8E2B703FA6D7B1EB02 /* [CP] Check Pods Manifest.lock */,
+				3BE3BF2F23AF4DCE00542392 /* Sources */,
+				3BE3BF3023AF4DCE00542392 /* Frameworks */,
+				3BE3BF3123AF4DCE00542392 /* Resources */,
+				9A723ECEFC9103F1DEE16EA8 /* [CP] Embed Pods Frameworks */,
+				5358028288C3ABA7749EFEBA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckSeven;
+			productName = LuckSeven;
+			productReference = 3BE3BF3323AF4DCE00542392 /* LuckSeven.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BE3BF4823AF4DD500542392 /* LuckSevenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BE3BF6023AF4DD500542392 /* Build configuration list for PBXNativeTarget "LuckSevenTests" */;
+			buildPhases = (
+				E4FAF67DB68DBF1111348663 /* [CP] Check Pods Manifest.lock */,
+				3BE3BF4523AF4DD500542392 /* Sources */,
+				3BE3BF4623AF4DD500542392 /* Frameworks */,
+				3BE3BF4723AF4DD500542392 /* Resources */,
+				9AE0A3C51F2B6A8396B1D1A4 /* [CP] Embed Pods Frameworks */,
+				7C33CC630105D9DB79BE4E60 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BE3BF4B23AF4DD500542392 /* PBXTargetDependency */,
+			);
+			name = LuckSevenTests;
+			productName = LuckSevenTests;
+			productReference = 3BE3BF4923AF4DD500542392 /* LuckSevenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BE3BF5323AF4DD500542392 /* LuckSevenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BE3BF6323AF4DD500542392 /* Build configuration list for PBXNativeTarget "LuckSevenUITests" */;
+			buildPhases = (
+				A48703A2EDE97EA9C2FD807B /* [CP] Check Pods Manifest.lock */,
+				3BE3BF5023AF4DD500542392 /* Sources */,
+				3BE3BF5123AF4DD500542392 /* Frameworks */,
+				3BE3BF5223AF4DD500542392 /* Resources */,
+				D5827A1D8352ABA09C5C2F36 /* [CP] Embed Pods Frameworks */,
+				945DD01F7C42F3AEAA5BCD0C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BE3BF5623AF4DD500542392 /* PBXTargetDependency */,
+			);
+			name = LuckSevenUITests;
+			productName = LuckSevenUITests;
+			productReference = 3BE3BF5423AF4DD500542392 /* LuckSevenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BE3BF2B23AF4DCE00542392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = LuckSeven;
+				TargetAttributes = {
+					3BE3BF3223AF4DCE00542392 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					3BE3BF4823AF4DD500542392 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 3BE3BF3223AF4DCE00542392;
+					};
+					3BE3BF5323AF4DD500542392 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 3BE3BF3223AF4DCE00542392;
+					};
+				};
+			};
+			buildConfigurationList = 3BE3BF2E23AF4DCE00542392 /* Build configuration list for PBXProject "LuckSeven" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BE3BF2A23AF4DCE00542392;
+			productRefGroup = 3BE3BF3423AF4DCE00542392 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BE3BF3223AF4DCE00542392 /* LuckSeven */,
+				3BE3BF4823AF4DD500542392 /* LuckSevenTests */,
+				3BE3BF5323AF4DD500542392 /* LuckSevenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BE3BF3123AF4DCE00542392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE3BF4323AF4DD500542392 /* LaunchScreen.storyboard in Resources */,
+				3BE3BF4023AF4DD500542392 /* Assets.xcassets in Resources */,
+				3BE3BF3E23AF4DCF00542392 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE3BF4723AF4DD500542392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE3BF5223AF4DD500542392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AB28E8E2B703FA6D7B1EB02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckSeven-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5358028288C3ABA7749EFEBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C33CC630105D9DB79BE4E60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuckSevenTests/Pods-LuckSevenTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		945DD01F7C42F3AEAA5BCD0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuckSevenUITests/Pods-LuckSevenUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A723ECEFC9103F1DEE16EA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AE0A3C51F2B6A8396B1D1A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuckSevenTests/Pods-LuckSevenTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A48703A2EDE97EA9C2FD807B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckSevenUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5827A1D8352ABA09C5C2F36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuckSevenUITests/Pods-LuckSevenUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FAF67DB68DBF1111348663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckSevenTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BE3BF2F23AF4DCE00542392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE3BF3B23AF4DCE00542392 /* ViewController.swift in Sources */,
+				3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */,
+				3BE3BF3923AF4DCE00542392 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE3BF4523AF4DD500542392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE3BF4E23AF4DD500542392 /* LuckSevenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE3BF5023AF4DD500542392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE3BF5923AF4DD500542392 /* LuckSevenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BE3BF4B23AF4DD500542392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BE3BF3223AF4DCE00542392 /* LuckSeven */;
+			targetProxy = 3BE3BF4A23AF4DD500542392 /* PBXContainerItemProxy */;
+		};
+		3BE3BF5623AF4DD500542392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BE3BF3223AF4DCE00542392 /* LuckSeven */;
+			targetProxy = 3BE3BF5523AF4DD500542392 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BE3BF3C23AF4DCF00542392 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BE3BF3D23AF4DCF00542392 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BE3BF4123AF4DD500542392 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BE3BF4223AF4DD500542392 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BE3BF5B23AF4DD500542392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BE3BF5C23AF4DD500542392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BE3BF5E23AF4DD500542392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF909B8BB1DC91853E72F955 /* Pods-LuckSeven.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VU3F55NH95;
+				INFOPLIST_FILE = LuckSeven/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSeven;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BE3BF5F23AF4DD500542392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1726BFBAE544EDF8F957C1B3 /* Pods-LuckSeven.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VU3F55NH95;
+				INFOPLIST_FILE = LuckSeven/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSeven;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BE3BF6123AF4DD500542392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73754D418D9112FA9E4E58B /* Pods-LuckSevenTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VU3F55NH95;
+				INFOPLIST_FILE = LuckSevenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSevenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckSeven.app/LuckSeven";
+			};
+			name = Debug;
+		};
+		3BE3BF6223AF4DD500542392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30F13674FE04998C444CD72 /* Pods-LuckSevenTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VU3F55NH95;
+				INFOPLIST_FILE = LuckSevenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSevenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckSeven.app/LuckSeven";
+			};
+			name = Release;
+		};
+		3BE3BF6423AF4DD500542392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40932293EFAB98A3CFA91FDC /* Pods-LuckSevenUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VU3F55NH95;
+				INFOPLIST_FILE = LuckSevenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSevenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckSeven;
+			};
+			name = Debug;
+		};
+		3BE3BF6523AF4DD500542392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901A8E2C1CE9F7EBE12CA2DF /* Pods-LuckSevenUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VU3F55NH95;
+				INFOPLIST_FILE = LuckSevenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSevenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckSeven;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BE3BF2E23AF4DCE00542392 /* Build configuration list for PBXProject "LuckSeven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE3BF5B23AF4DD500542392 /* Debug */,
+				3BE3BF5C23AF4DD500542392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BE3BF5D23AF4DD500542392 /* Build configuration list for PBXNativeTarget "LuckSeven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE3BF5E23AF4DD500542392 /* Debug */,
+				3BE3BF5F23AF4DD500542392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BE3BF6023AF4DD500542392 /* Build configuration list for PBXNativeTarget "LuckSevenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE3BF6123AF4DD500542392 /* Debug */,
+				3BE3BF6223AF4DD500542392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BE3BF6323AF4DD500542392 /* Build configuration list for PBXNativeTarget "LuckSevenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE3BF6423AF4DD500542392 /* Debug */,
+				3BE3BF6523AF4DD500542392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BE3BF2B23AF4DCE00542392 /* Project object */;
+}
