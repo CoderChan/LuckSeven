@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */; };
-		3BE3BF3923AF4DCE00542392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3823AF4DCE00542392 /* SceneDelegate.swift */; };
-		3BE3BF3B23AF4DCE00542392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3A23AF4DCE00542392 /* ViewController.swift */; };
-		3BE3BF3E23AF4DCF00542392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3C23AF4DCF00542392 /* Main.storyboard */; };
+		3BE3BF3B23AF4DCE00542392 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */; };
 		3BE3BF4023AF4DD500542392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3F23AF4DD500542392 /* Assets.xcassets */; };
 		3BE3BF4323AF4DD500542392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE3BF4123AF4DD500542392 /* LaunchScreen.storyboard */; };
 		3BE3BF4E23AF4DD500542392 /* LuckSevenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF4D23AF4DD500542392 /* LuckSevenTests.swift */; };
@@ -41,9 +39,7 @@
 		1726BFBAE544EDF8F957C1B3 /* Pods-LuckSeven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckSeven.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven.release.xcconfig"; sourceTree = "<group>"; };
 		3BE3BF3323AF4DCE00542392 /* LuckSeven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckSeven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BE3BF3823AF4DCE00542392 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3BE3BF3A23AF4DCE00542392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BE3BF3D23AF4DCF00542392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		3BE3BF3F23AF4DD500542392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BE3BF4223AF4DD500542392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE3BF4423AF4DD500542392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,9 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */,
-				3BE3BF3823AF4DCE00542392 /* SceneDelegate.swift */,
-				3BE3BF3A23AF4DCE00542392 /* ViewController.swift */,
-				3BE3BF3C23AF4DCF00542392 /* Main.storyboard */,
+				3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */,
 				3BE3BF3F23AF4DD500542392 /* Assets.xcassets */,
 				3BE3BF4123AF4DD500542392 /* LaunchScreen.storyboard */,
 				3BE3BF4423AF4DD500542392 /* Info.plist */,
@@ -283,7 +277,6 @@
 			files = (
 				3BE3BF4323AF4DD500542392 /* LaunchScreen.storyboard in Resources */,
 				3BE3BF4023AF4DD500542392 /* Assets.xcassets in Resources */,
-				3BE3BF3E23AF4DCF00542392 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,9 +455,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BE3BF3B23AF4DCE00542392 /* ViewController.swift in Sources */,
+				3BE3BF3B23AF4DCE00542392 /* SuperViewController.swift in Sources */,
 				3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */,
-				3BE3BF3923AF4DCE00542392 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,14 +492,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3BE3BF3C23AF4DCF00542392 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BE3BF3D23AF4DCF00542392 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BE3BF4123AF4DD500542392 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -641,7 +625,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU3F55NH95;
 				INFOPLIST_FILE = LuckSeven/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSeven;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -657,7 +645,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU3F55NH95;
 				INFOPLIST_FILE = LuckSeven/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSeven;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -675,7 +667,11 @@
 				DEVELOPMENT_TEAM = VU3F55NH95;
 				INFOPLIST_FILE = LuckSevenTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSevenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -694,7 +690,11 @@
 				DEVELOPMENT_TEAM = VU3F55NH95;
 				INFOPLIST_FILE = LuckSevenTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSevenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -711,7 +711,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU3F55NH95;
 				INFOPLIST_FILE = LuckSevenUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSevenUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -728,7 +732,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU3F55NH95;
 				INFOPLIST_FILE = LuckSevenUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSevenUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
