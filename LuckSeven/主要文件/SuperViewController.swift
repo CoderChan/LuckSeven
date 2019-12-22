@@ -13,7 +13,19 @@ class SuperViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "LuckSeven";
-        self.view.backgroundColor = .gray
+        self.view.backgroundColor = .white
+    }
+    
+    func setupSubViews() -> Void {
+        
+    }
+    
+    func addContrains() -> Void {
+        
+    }
+    
+    func handleBuness() -> Void {
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
