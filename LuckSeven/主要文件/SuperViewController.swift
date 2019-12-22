@@ -12,9 +12,15 @@ class SuperViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .purple
+        self.title = "LuckSeven";
+        self.view.backgroundColor = .gray
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.view.endEditing(true)
+        
+    }
     
 }
 

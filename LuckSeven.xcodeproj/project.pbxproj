@@ -124,12 +124,8 @@
 		3BE3BF3523AF4DCE00542392 /* LuckSeven */ = {
 			isa = PBXGroup;
 			children = (
-				3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */,
-				3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */,
-				3BE3BF6623AF570D00542392 /* RootNavigationController.swift */,
-				3BE3BF3F23AF4DD500542392 /* Assets.xcassets */,
-				3BE3BF4123AF4DD500542392 /* LaunchScreen.storyboard */,
-				3BE3BF4423AF4DD500542392 /* Info.plist */,
+				3BE3BF6923AF60D200542392 /* 主要文件 */,
+				3BE3BF6823AF60C400542392 /* 系统文件 */,
 			);
 			path = LuckSeven;
 			sourceTree = "<group>";
@@ -150,6 +146,26 @@
 				3BE3BF5A23AF4DD500542392 /* Info.plist */,
 			);
 			path = LuckSevenUITests;
+			sourceTree = "<group>";
+		};
+		3BE3BF6823AF60C400542392 /* 系统文件 */ = {
+			isa = PBXGroup;
+			children = (
+				3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */,
+				3BE3BF3F23AF4DD500542392 /* Assets.xcassets */,
+				3BE3BF4123AF4DD500542392 /* LaunchScreen.storyboard */,
+				3BE3BF4423AF4DD500542392 /* Info.plist */,
+			);
+			path = "系统文件";
+			sourceTree = "<group>";
+		};
+		3BE3BF6923AF60D200542392 /* 主要文件 */ = {
+			isa = PBXGroup;
+			children = (
+				3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */,
+				3BE3BF6623AF570D00542392 /* RootNavigationController.swift */,
+			);
+			path = "主要文件";
 			sourceTree = "<group>";
 		};
 		7B3895D7DB0DF3795BB56786 /* Pods */ = {
@@ -628,7 +644,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU3F55NH95;
-				INFOPLIST_FILE = LuckSeven/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LuckSeven/系统文件/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -648,7 +664,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU3F55NH95;
-				INFOPLIST_FILE = LuckSeven/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LuckSeven/系统文件/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
