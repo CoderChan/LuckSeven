@@ -1,0 +1,2 @@
+# LuckSeven
+nothing project
