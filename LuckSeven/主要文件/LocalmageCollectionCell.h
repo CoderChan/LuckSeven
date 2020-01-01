@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) UILabel *titleLabel;
 
++ (CGFloat)space;
+
 + (CGSize)cellSize;
 
 @property (copy,nonatomic) NSString *imageNameStr;

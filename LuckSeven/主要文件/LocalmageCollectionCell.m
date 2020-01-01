@@ -62,10 +62,14 @@
     [self addSubview:self.titleLabel];
 }
 
++ (CGFloat)space {
+    return 1.5;
+}
+
 + (CGSize)cellSize {
-    CGFloat space = 1;
+    CGFloat space = LocalmageCollectionCell.space;
     CGFloat width = (UIScreen.mainScreen.bounds.size.width + space * 2 - 4 * space) / 3;
-    CGSize size = CGSizeMake(width, width * 1.2 + 40);
+    CGSize size = CGSizeMake(width, width / 0.5625);
     return size;
 }
 

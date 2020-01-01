@@ -18,9 +18,6 @@ class LocalmageViewController: SuperViewController, UICollectionViewDataSource, 
     
     var array: [String]!
     
-    var space: CGFloat = 1
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +32,9 @@ class LocalmageViewController: SuperViewController, UICollectionViewDataSource, 
         let image: UIImage = (UIImage(named: "杨玲")?.ks_imageByBlurDark())!
         let backView: UIImageView = UIImageView(image: image)
         backView.frame = self.view.bounds
-        self.view.addSubview(backView)
+//        self.view.addSubview(backView)
+        
+        let space: CGFloat = LocalmageCollectionCell.space()
         
         self.array = LocalmageManager.localArray()
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -48,6 +47,7 @@ class LocalmageViewController: SuperViewController, UICollectionViewDataSource, 
         self.collectView?.dataSource = (self as UICollectionViewDataSource)
         self.collectView?.alwaysBounceVertical = true
         self.collectView?.register(LocalmageCollectionCell.self, forCellWithReuseIdentifier: "LocalmageCollectionCell")
+        self.collectView.backgroundColor = .clear
         self.view.addSubview(self.collectView!)
         
     }
