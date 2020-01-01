@@ -21,24 +21,31 @@ class RootNavigationController: UINavigationController, UINavigationControllerDe
     }
     
     func setupOptions() {
-//        let titleFont: UIFont = UIFont.boldSystemFont(ofSize: 18)
-//        let titleColor: UIColor = .red
         
-//        self.navigationBar.titleTextAttributes
+        // 标题设置
+        let titleFont: UIFont = UIFont.boldSystemFont(ofSize: 18)
+        let titleColor: UIColor = .black
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: titleFont, NSAttributedString.Key.foregroundColor: titleColor]
+        
+        // 背景色
         self.navigationBar.barTintColor = .white
+        // 左右侧颜色
         self.navigationBar.tintColor = .black
+        
         // 去掉导航栏的线
 //        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
 //        self.navigationBar.shadowImage = UIImage()
         // 控制导航栏是否隐藏
         self.navigationBar.isTranslucent = false
         self.navigationBar.barStyle = .default
+        
+        print("我的导航栏高度 = \(self.navigationBar.height)")
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if self.viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "back"), style: .done, target: self, action: #selector(backAction))
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .done, target: self, action: #selector(backAction))
         }
         super.pushViewController(viewController, animated: true)
     }

@@ -3,4 +3,6 @@
 //
 
 #import "LocalmageCollectionCell.h"
-
+#import "WJCircleTabCell.h"
+#import "WJCircleTableView.h"
+#import "WJCircleTableViewInterceptor.h"

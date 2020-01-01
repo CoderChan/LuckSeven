@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (copy,nonatomic) NSString *imageNameStr;
 
+@property (copy,nonatomic) NSString *name;
+
 + (instancetype)sharedCell:(UICollectionView *)collectView IndexPath:(NSIndexPath *)indexPath;
 
 @end

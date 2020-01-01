@@ -10,6 +10,10 @@
 		3B98147823BC73F70028C22A /* LocalmageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */; };
 		3B98147A23BC8C610028C22A /* LocalmageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98147923BC8C610028C22A /* LocalmageManager.swift */; };
 		3B98147C23BC8D5C0028C22A /* UIImage+MLCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98147B23BC8D5C0028C22A /* UIImage+MLCategory.swift */; };
+		3B98148323BCA8C20028C22A /* LocalmageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98148223BCA8C20028C22A /* LocalmageModel.swift */; };
+		3B98148B23BCAB6D0028C22A /* WJCircleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B98148523BCAB6B0028C22A /* WJCircleTableView.m */; };
+		3B98148C23BCAB6D0028C22A /* WJCircleTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B98148723BCAB6C0028C22A /* WJCircleTabCell.m */; };
+		3B98148D23BCAB6D0028C22A /* WJCircleTableViewInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B98148823BCAB6C0028C22A /* WJCircleTableViewInterceptor.m */; };
 		3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */; };
 		3BE3BF3B23AF4DCE00542392 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */; };
 		3BE3BF4023AF4DD500542392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3F23AF4DD500542392 /* Assets.xcassets */; };
@@ -48,6 +52,13 @@
 		3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalmageCollectionCell.m; sourceTree = "<group>"; };
 		3B98147923BC8C610028C22A /* LocalmageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalmageManager.swift; sourceTree = "<group>"; };
 		3B98147B23BC8D5C0028C22A /* UIImage+MLCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+MLCategory.swift"; sourceTree = "<group>"; };
+		3B98148223BCA8C20028C22A /* LocalmageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalmageModel.swift; sourceTree = "<group>"; };
+		3B98148523BCAB6B0028C22A /* WJCircleTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCircleTableView.m; sourceTree = "<group>"; };
+		3B98148623BCAB6C0028C22A /* WJCircleTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCircleTabCell.h; sourceTree = "<group>"; };
+		3B98148723BCAB6C0028C22A /* WJCircleTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCircleTabCell.m; sourceTree = "<group>"; };
+		3B98148823BCAB6C0028C22A /* WJCircleTableViewInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCircleTableViewInterceptor.m; sourceTree = "<group>"; };
+		3B98148923BCAB6D0028C22A /* WJCircleTableViewInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCircleTableViewInterceptor.h; sourceTree = "<group>"; };
+		3B98148A23BCAB6D0028C22A /* WJCircleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCircleTableView.h; sourceTree = "<group>"; };
 		3BE3BF3323AF4DCE00542392 /* LuckSeven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckSeven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +120,19 @@
 				7150EDC710E4641FC8221A44 /* Pods_LuckSevenUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B98148423BCAB530028C22A /* 大转盘 */ = {
+			isa = PBXGroup;
+			children = (
+				3B98148623BCAB6C0028C22A /* WJCircleTabCell.h */,
+				3B98148723BCAB6C0028C22A /* WJCircleTabCell.m */,
+				3B98148A23BCAB6D0028C22A /* WJCircleTableView.h */,
+				3B98148523BCAB6B0028C22A /* WJCircleTableView.m */,
+				3B98148923BCAB6D0028C22A /* WJCircleTableViewInterceptor.h */,
+				3B98148823BCAB6C0028C22A /* WJCircleTableViewInterceptor.m */,
+			);
+			path = "大转盘";
 			sourceTree = "<group>";
 		};
 		3BE3BF2A23AF4DCE00542392 = {
@@ -175,12 +199,14 @@
 		3BE3BF6923AF60D200542392 /* 主要文件 */ = {
 			isa = PBXGroup;
 			children = (
+				3B98148423BCAB530028C22A /* 大转盘 */,
 				3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */,
 				3BE3BF6623AF570D00542392 /* RootNavigationController.swift */,
 				3BE3BF6A23AF624D00542392 /* HomeViewController.swift */,
 				3BE3BF6C23AF627100542392 /* LocalmageViewController.swift */,
 				3B98147623BC73F70028C22A /* LocalmageCollectionCell.h */,
 				3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */,
+				3B98148223BCA8C20028C22A /* LocalmageModel.swift */,
 				3B98147B23BC8D5C0028C22A /* UIImage+MLCategory.swift */,
 				3B98147523BC73F70028C22A /* LuckSeven-Bridging-Header.h */,
 				3B98147923BC8C610028C22A /* LocalmageManager.swift */,
@@ -509,11 +535,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B98148B23BCAB6D0028C22A /* WJCircleTableView.m in Sources */,
 				3BE3BF3B23AF4DCE00542392 /* SuperViewController.swift in Sources */,
+				3B98148C23BCAB6D0028C22A /* WJCircleTabCell.m in Sources */,
 				3B98147823BC73F70028C22A /* LocalmageCollectionCell.m in Sources */,
 				3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */,
 				3BE3BF6723AF570D00542392 /* RootNavigationController.swift in Sources */,
+				3B98148D23BCAB6D0028C22A /* WJCircleTableViewInterceptor.m in Sources */,
 				3BE3BF6B23AF624D00542392 /* HomeViewController.swift in Sources */,
+				3B98148323BCA8C20028C22A /* LocalmageModel.swift in Sources */,
 				3BE3BF6D23AF627100542392 /* LocalmageViewController.swift in Sources */,
 				3B98147C23BC8D5C0028C22A /* UIImage+MLCategory.swift in Sources */,
 				3B98147A23BC8C610028C22A /* LocalmageManager.swift in Sources */,

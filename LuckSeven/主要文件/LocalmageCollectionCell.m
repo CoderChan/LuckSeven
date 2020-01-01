@@ -36,8 +36,12 @@
 
 - (void)setImageNameStr:(NSString *)imageNameStr {
     _imageNameStr = imageNameStr;
-    _coverImgView.image = [UIImage imageNamed:imageNameStr];
     _titleLabel.text = imageNameStr;
+}
+
+- (void)setName:(NSString *)name {
+    _name = name;
+    _coverImgView.image = [UIImage imageNamed:name];
 }
 
 - (void)setupSubViews {

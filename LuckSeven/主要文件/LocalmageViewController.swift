@@ -16,7 +16,7 @@ class LocalmageViewController: SuperViewController, UICollectionViewDataSource, 
     
     var collectView: UICollectionView!
     
-    var array: [String]!
+    var array: [LocalmageModel]!
     
     
     override func viewDidLoad() {
@@ -68,13 +68,16 @@ extension LocalmageViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let model: LocalmageModel = self.array[indexPath.item]
         let cell: LocalmageCollectionCell = LocalmageCollectionCell.sharedCell(collectionView, indexPath: indexPath)
-        cell.imageNameStr = self.array[indexPath.item]
+        cell.imageNameStr = "\(model.index!).\(model.name!)"
+        cell.name = model.name
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let name: String = self.array[indexPath.item]
+        let model: LocalmageModel = self.array[indexPath.item]
+        let name: String = model.name
         let image: UIImage = UIImage(named: name)!
         let cell: LocalmageCollectionCell = collectionView.cellForItem(at: indexPath) as! LocalmageCollectionCell
         
