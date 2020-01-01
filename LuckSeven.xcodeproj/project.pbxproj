@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B98147823BC73F70028C22A /* LocalmageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */; };
 		3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */; };
 		3BE3BF3B23AF4DCE00542392 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */; };
 		3BE3BF4023AF4DD500542392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3F23AF4DD500542392 /* Assets.xcassets */; };
@@ -40,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		1726BFBAE544EDF8F957C1B3 /* Pods-LuckSeven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckSeven.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven.release.xcconfig"; sourceTree = "<group>"; };
+		3B98147523BC73F70028C22A /* LuckSeven-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LuckSeven-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B98147623BC73F70028C22A /* LocalmageCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalmageCollectionCell.h; sourceTree = "<group>"; };
+		3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalmageCollectionCell.m; sourceTree = "<group>"; };
 		3BE3BF3323AF4DCE00542392 /* LuckSeven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckSeven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +174,9 @@
 				3BE3BF6623AF570D00542392 /* RootNavigationController.swift */,
 				3BE3BF6A23AF624D00542392 /* HomeViewController.swift */,
 				3BE3BF6C23AF627100542392 /* LocalmageViewController.swift */,
+				3B98147623BC73F70028C22A /* LocalmageCollectionCell.h */,
+				3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */,
+				3B98147523BC73F70028C22A /* LuckSeven-Bridging-Header.h */,
 			);
 			path = "主要文件";
 			sourceTree = "<group>";
@@ -264,6 +271,7 @@
 				TargetAttributes = {
 					3BE3BF3223AF4DCE00542392 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1130;
 					};
 					3BE3BF4823AF4DD500542392 = {
 						CreatedOnToolsVersion = 11.2;
@@ -392,13 +400,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -481,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BE3BF3B23AF4DCE00542392 /* SuperViewController.swift in Sources */,
+				3B98147823BC73F70028C22A /* LocalmageCollectionCell.m in Sources */,
 				3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */,
 				3BE3BF6723AF570D00542392 /* RootNavigationController.swift in Sources */,
 				3BE3BF6B23AF624D00542392 /* HomeViewController.swift in Sources */,
@@ -650,6 +665,7 @@
 			baseConfigurationReference = DF909B8BB1DC91853E72F955 /* Pods-LuckSeven.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU3F55NH95;
 				INFOPLIST_FILE = "$(SRCROOT)/LuckSeven/系统文件/Info.plist";
@@ -660,6 +676,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSeven;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LuckSeven/主要文件/LuckSeven-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -670,6 +688,7 @@
 			baseConfigurationReference = 1726BFBAE544EDF8F957C1B3 /* Pods-LuckSeven.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU3F55NH95;
 				INFOPLIST_FILE = "$(SRCROOT)/LuckSeven/系统文件/Info.plist";
@@ -680,6 +699,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LuckSeven.LuckSeven;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LuckSeven/主要文件/LuckSeven-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

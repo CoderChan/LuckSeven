@@ -6,6 +6,8 @@ target 'LuckSeven' do
 
   pod 'SnapKit'
   pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
 #  pod 'FDFullscreenPopGesture'
 
   target 'LuckSevenTests' do
