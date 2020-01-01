@@ -56,7 +56,7 @@
     //是否允许循环滚动
     self.enableInfiniteScrolling = YES;
     //默认横向距离
-    self.horizontalRadiusCorrection=1.0;
+    self.horizontalRadiusCorrection = 1.0;
 }
 
 #pragma mark Layout
