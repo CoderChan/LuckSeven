@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3B98147823BC73F70028C22A /* LocalmageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */; };
+		3B98147A23BC8C610028C22A /* LocalmageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98147923BC8C610028C22A /* LocalmageManager.swift */; };
+		3B98147C23BC8D5C0028C22A /* UIImage+MLCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98147B23BC8D5C0028C22A /* UIImage+MLCategory.swift */; };
 		3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */; };
 		3BE3BF3B23AF4DCE00542392 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */; };
 		3BE3BF4023AF4DD500542392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE3BF3F23AF4DD500542392 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		3B98147523BC73F70028C22A /* LuckSeven-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LuckSeven-Bridging-Header.h"; sourceTree = "<group>"; };
 		3B98147623BC73F70028C22A /* LocalmageCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalmageCollectionCell.h; sourceTree = "<group>"; };
 		3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalmageCollectionCell.m; sourceTree = "<group>"; };
+		3B98147923BC8C610028C22A /* LocalmageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalmageManager.swift; sourceTree = "<group>"; };
+		3B98147B23BC8D5C0028C22A /* UIImage+MLCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+MLCategory.swift"; sourceTree = "<group>"; };
 		3BE3BF3323AF4DCE00542392 /* LuckSeven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckSeven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE3BF3623AF4DCE00542392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 				23A41BABFC430C110730768D /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		3BE3BF3423AF4DCE00542392 /* Products */ = {
 			isa = PBXGroup;
@@ -176,7 +181,9 @@
 				3BE3BF6C23AF627100542392 /* LocalmageViewController.swift */,
 				3B98147623BC73F70028C22A /* LocalmageCollectionCell.h */,
 				3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */,
+				3B98147B23BC8D5C0028C22A /* UIImage+MLCategory.swift */,
 				3B98147523BC73F70028C22A /* LuckSeven-Bridging-Header.h */,
+				3B98147923BC8C610028C22A /* LocalmageManager.swift */,
 			);
 			path = "主要文件";
 			sourceTree = "<group>";
@@ -401,20 +408,28 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/KSPhotoBrowser/KSPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -500,6 +515,8 @@
 				3BE3BF6723AF570D00542392 /* RootNavigationController.swift in Sources */,
 				3BE3BF6B23AF624D00542392 /* HomeViewController.swift in Sources */,
 				3BE3BF6D23AF627100542392 /* LocalmageViewController.swift in Sources */,
+				3B98147C23BC8D5C0028C22A /* UIImage+MLCategory.swift in Sources */,
+				3B98147A23BC8C610028C22A /* LocalmageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

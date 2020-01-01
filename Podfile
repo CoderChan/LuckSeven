@@ -8,7 +8,8 @@ target 'LuckSeven' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
-#  pod 'FDFullscreenPopGesture'
+  pod 'KSPhotoBrowser'
+  pod 'YYKit'
 
   target 'LuckSevenTests' do
     inherit! :search_paths
