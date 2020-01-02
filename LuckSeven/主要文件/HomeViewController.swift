@@ -9,10 +9,8 @@
 import UIKit
 import YYKit
 
-class HomeViewController: SuperViewController, UITableViewDataSource, UITableViewDelegate {
+class HomeViewController: SuperViewController {
     
-    var tableView: WJCircleTableView!
-    var array: [LocalmageModel]!
     
     /// MARK 添加子控件
     override func viewDidLoad() {
@@ -36,11 +34,15 @@ class HomeViewController: SuperViewController, UITableViewDataSource, UITableVie
     }
     
     override func handleBuness() {
-        self.array = LocalmageManager.localArray()
-        self.tableView = WJCircleTableView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height - 64))
-        self.tableView.delegate = self as UITableViewDelegate
-        self.tableView.dataSource = self as UITableViewDataSource
-        self.view.addSubview(self.tableView)
+        let button: UIButton = UIButton(type: .custom)
+        button.backgroundColor = .red
+        button.frame = CGRect(x: 100, y: 100, width: 150, height: 50)
+        button.addBlock(for: .touchUpInside) { [weak self] (sender) in
+            let luck: LuckViewController = LuckViewController()
+            let nav: RootNavigationController = RootNavigationController(rootViewController: luck)
+            self?.present(nav, animated: true, completion: nil)
+        }
+        self.view.addSubview(button)
     }
     
     @objc func pushToLocalImageController() -> Void {
@@ -50,18 +52,3 @@ class HomeViewController: SuperViewController, UITableViewDataSource, UITableVie
 
 }
 
-extension HomeViewController {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.array.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: WJCircleTabCell = WJCircleTabCell.sharedCell(tableView)
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return WJCircleTabCell.cellHeight()
-    }
-}

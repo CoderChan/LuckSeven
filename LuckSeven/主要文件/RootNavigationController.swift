@@ -18,6 +18,7 @@ class RootNavigationController: UINavigationController, UINavigationControllerDe
         self.setupOptions()
         self.popDelegate = self.interactivePopGestureRecognizer?.delegate
         self.delegate = self
+        self.modalPresentationStyle = .fullScreen
     }
     
     func setupOptions() {
