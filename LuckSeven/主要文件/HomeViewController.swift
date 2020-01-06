@@ -34,15 +34,28 @@ class HomeViewController: SuperViewController {
     }
     
     override func handleBuness() {
-        let button: UIButton = UIButton(type: .custom)
-        button.backgroundColor = .red
-        button.frame = CGRect(x: 100, y: 100, width: 150, height: 50)
-        button.addBlock(for: .touchUpInside) { [weak self] (sender) in
+        let startImage: UIImage = UIImage(named: "start_run")!
+        let startButton: UIButton = UIButton(type: .custom)
+        startButton.setBackgroundImage(startImage, for: .normal)
+        startButton.setBackgroundImage(startImage, for: .highlighted)
+        startButton.addBlock(for: .touchUpInside) { (sender) in
             let luck: LuckViewController = LuckViewController()
             let nav: RootNavigationController = RootNavigationController(rootViewController: luck)
-            self?.present(nav, animated: true, completion: nil)
+            self.present(nav, animated: false, completion: nil)
+            
+            let animation: CATransition = CATransition()
+            animation.duration = 0.8
+            animation.type = CATransitionType(rawValue: "cube")
+            animation.subtype = .fromTop
+            self.view.window?.layer.add(animation, forKey: nil)
         }
-        self.view.addSubview(button)
+        self.view.addSubview(startButton)
+        startButton.snp_makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.width.equalTo(110)
+            make.height.equalTo(50)
+        }
     }
     
     @objc func pushToLocalImageController() -> Void {

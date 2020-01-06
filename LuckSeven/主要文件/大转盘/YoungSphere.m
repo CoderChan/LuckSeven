@@ -58,8 +58,15 @@
 
 #pragma mark - initial set
 
-- (void)setCloudTags:(NSArray *)array
+- (void)setCloudTags:(NSArray<UIImageView *> *)array
 {
+    for (UIImageView *subView in array) {
+        subView.contentMode = UIViewContentModeScaleAspectFill;
+        [subView setContentScaleFactor:[UIScreen mainScreen].scale];
+        subView.layer.masksToBounds = YES;
+        subView.autoresizingMask = UIViewAutoresizingFlexibleHeight & UIViewAutoresizingFlexibleWidth;
+        subView.layer.cornerRadius = 30.f;
+    }
     tags = [NSMutableArray arrayWithArray:array];
     coordinate = [[NSMutableArray alloc] initWithCapacity:0];
     

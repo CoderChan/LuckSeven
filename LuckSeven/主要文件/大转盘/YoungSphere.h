@@ -18,7 +18,7 @@
  *
  *  @param array The array of tag views.
  */
-- (void)setCloudTags:(NSArray *)array;
+- (void)setCloudTags:(NSArray <UIImageView *>*)array;
 
 /**
  *  Starts the cloud autorotation animation.

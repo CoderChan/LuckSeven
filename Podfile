@@ -1,4 +1,6 @@
- platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
  inhibit_all_warnings!
 
 target 'LuckSeven' do
@@ -10,6 +12,7 @@ target 'LuckSeven' do
   pod 'RxDataSources'
   pod 'KSPhotoBrowser'
   pod 'YYKit'
+  pod 'FDFullscreenPopGesture'
 
   target 'LuckSevenTests' do
     inherit! :search_paths
