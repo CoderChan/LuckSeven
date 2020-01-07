@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B66F58223C30946000277C1 /* LuckResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B66F58123C30946000277C1 /* LuckResultViewController.m */; };
 		1B75D3E223BDB58500EE6A19 /* YoungSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75D3DE23BDB58500EE6A19 /* YoungSphere.m */; };
 		1B75D3E423BDB6BE00EE6A19 /* LuckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75D3E323BDB6BE00EE6A19 /* LuckViewController.swift */; };
 		3B98147823BC73F70028C22A /* LocalmageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */; };
@@ -46,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		1726BFBAE544EDF8F957C1B3 /* Pods-LuckSeven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckSeven.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckSeven/Pods-LuckSeven.release.xcconfig"; sourceTree = "<group>"; };
+		1B66F58023C30946000277C1 /* LuckResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LuckResultViewController.h; sourceTree = "<group>"; };
+		1B66F58123C30946000277C1 /* LuckResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuckResultViewController.m; sourceTree = "<group>"; };
 		1B75D3DE23BDB58500EE6A19 /* YoungSphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoungSphere.m; sourceTree = "<group>"; };
 		1B75D3DF23BDB58500EE6A19 /* YoungPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoungPoint.h; sourceTree = "<group>"; };
 		1B75D3E023BDB58500EE6A19 /* YoungMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoungMatrix.h; sourceTree = "<group>"; };
@@ -196,14 +199,16 @@
 			isa = PBXGroup;
 			children = (
 				3B98148423BCAB530028C22A /* 大转盘 */,
-				3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */,
-				3BE3BF6623AF570D00542392 /* RootNavigationController.swift */,
 				3BE3BF6A23AF624D00542392 /* HomeViewController.swift */,
 				1B75D3E323BDB6BE00EE6A19 /* LuckViewController.swift */,
+				1B66F58023C30946000277C1 /* LuckResultViewController.h */,
+				1B66F58123C30946000277C1 /* LuckResultViewController.m */,
 				3BE3BF6C23AF627100542392 /* LocalmageViewController.swift */,
 				3B98147623BC73F70028C22A /* LocalmageCollectionCell.h */,
 				3B98147723BC73F70028C22A /* LocalmageCollectionCell.m */,
 				3B98148223BCA8C20028C22A /* LocalmageModel.swift */,
+				3BE3BF3A23AF4DCE00542392 /* SuperViewController.swift */,
+				3BE3BF6623AF570D00542392 /* RootNavigationController.swift */,
 				3B98147B23BC8D5C0028C22A /* UIImage+MLCategory.swift */,
 				3B98147523BC73F70028C22A /* LuckSeven-Bridging-Header.h */,
 				3B98147923BC8C610028C22A /* LocalmageManager.swift */,
@@ -433,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B66F58223C30946000277C1 /* LuckResultViewController.m in Sources */,
 				3BE3BF3B23AF4DCE00542392 /* SuperViewController.swift in Sources */,
 				3B98147823BC73F70028C22A /* LocalmageCollectionCell.m in Sources */,
 				3BE3BF3723AF4DCE00542392 /* AppDelegate.swift in Sources */,

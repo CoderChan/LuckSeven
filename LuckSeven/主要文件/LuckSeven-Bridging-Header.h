@@ -4,3 +4,4 @@
 
 #import "LocalmageCollectionCell.h"
 #import "YoungSphere.h"
+#import "LuckResultViewController.h"

@@ -25,6 +25,9 @@
  */
 - (void)timerStart;
 
+/// 自动旋转
+- (void)autoTurnRotation;
+
 /**
  *  Stops the cloud autorotation animation.
  */

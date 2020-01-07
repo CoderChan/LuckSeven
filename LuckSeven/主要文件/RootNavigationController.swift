@@ -34,13 +34,12 @@ class RootNavigationController: UINavigationController, UINavigationControllerDe
         self.navigationBar.tintColor = .black
         
         // 去掉导航栏的线
-//        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationBar.shadowImage = UIImage()
         // 控制导航栏是否隐藏
         self.navigationBar.isTranslucent = false
-        self.navigationBar.barStyle = .default
+        self.navigationBar.barStyle = .blackTranslucent
         
-        print("我的导航栏高度 = \(self.navigationBar.height)")
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {

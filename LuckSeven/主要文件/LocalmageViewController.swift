@@ -22,6 +22,7 @@ class LocalmageViewController: SuperViewController, UICollectionViewDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "成员头像"
+        self.view.backgroundColor = .red
         self.setupSubViews()
         self.addContrains()
         self.handleBuness()
@@ -29,12 +30,28 @@ class LocalmageViewController: SuperViewController, UICollectionViewDataSource, 
 
     override func setupSubViews() {
         
-        let image: UIImage = (UIImage(named: "杨玲")?.ks_imageByBlurDark())!
+        let image: UIImage = (UIImage(named: "laugh")?.ks_imageByBlurDark())!
         let backView: UIImageView = UIImageView(image: image)
         backView.frame = self.view.bounds
-//        self.view.addSubview(backView)
+        self.view.addSubview(backView)
+        
+        let titleLabel: UILabel = UILabel(frame: CGRect(x: 0, y: 44, width: self.view.width, height: 30))
+        titleLabel.text = "参与的成员"
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        titleLabel.textAlignment = .center
+        titleLabel.textColor = .white
+        self.view.addSubview(titleLabel)
+        
+        let backButton: UIButton = UIButton(type: .custom)
+        backButton.setBackgroundImage(UIImage(named: "back"), for: .normal)
+        backButton.addBlock(for: .touchUpInside) { (sender) in
+            self.navigationController?.popViewController(animated: true)
+        }
+        backButton.frame = CGRect(x: 30, y: titleLabel.top, width: titleLabel.height, height: titleLabel.height)
+        self.view.addSubview(backButton)
         
         let space: CGFloat = LocalmageCollectionCell.space()
+        let top: CGFloat = titleLabel.frame.maxY + 20
         
         self.array = LocalmageManager.localArray()
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -42,7 +59,7 @@ class LocalmageViewController: SuperViewController, UICollectionViewDataSource, 
         flowLayout.minimumInteritemSpacing = space
         flowLayout.itemSize = LocalmageCollectionCell.cellSize()
         flowLayout.sectionInset = UIEdgeInsets(top: space, left: space, bottom: space, right: space)
-        self.collectView = UICollectionView(frame: CGRect(x: -space, y: 0, width: self.view.bounds.width + space * 2, height: self.view.bounds.height - 64), collectionViewLayout: flowLayout)
+        self.collectView = UICollectionView(frame: CGRect(x: -space, y: top, width: self.view.bounds.width + space * 2, height: self.view.bounds.height - top), collectionViewLayout: flowLayout)
         self.collectView?.delegate = (self as UICollectionViewDelegate)
         self.collectView?.dataSource = (self as UICollectionViewDataSource)
         self.collectView?.alwaysBounceVertical = true

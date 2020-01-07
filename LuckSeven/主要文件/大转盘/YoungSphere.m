@@ -9,6 +9,7 @@
 #import "YoungPoint.h"
 #import "YoungMatrix.h"
 #import "YoungSphere.h"
+#import "LocalmageCollectionCell.h"
 
 @interface YoungSphere() <UIGestureRecognizerDelegate>
 
@@ -66,6 +67,8 @@
         subView.layer.masksToBounds = YES;
         subView.autoresizingMask = UIViewAutoresizingFlexibleHeight & UIViewAutoresizingFlexibleWidth;
         subView.layer.cornerRadius = 30.f;
+        subView.layer.borderColor = [UIColor whiteColor].CGColor;
+        subView.layer.borderWidth = 1.5;
     }
     tags = [NSMutableArray arrayWithArray:array];
     coordinate = [[NSMutableArray alloc] initWithCapacity:0];
@@ -76,7 +79,7 @@
         // 控制出现时的动画效果
         view.center = CGPointMake(self.frame.size.width / 2., self.frame.size.height / 2. ); // 中心散开
         //  右下出现
-        //        view.center = CGPointMake(self.frame.size.width / 2.+ 200, self.frame.size.height / 2. + 300);
+//        view.center = CGPointMake(self.frame.size.width / 2.+ 200, self.frame.size.height / 2. + 300);
     }
     
     CGFloat p1 = M_PI * (3 - sqrt(5));
@@ -171,12 +174,14 @@
 {
     [self timerStop];
     inertia.paused = NO;
+    NSLog(@"开始");
 }
 
 - (void)inertiaStop
 {
     [self timerStart];
     inertia.paused = YES;
+    NSLog(@"停了");
 }
 
 - (void)inertiaStep
@@ -184,7 +189,7 @@
     if (velocity <= 0) {
         [self inertiaStop];
     }else {
-        velocity -= 70.;
+        velocity -= 150.;
         CGFloat angle = velocity / self.frame.size.width * 2. * inertia.duration ;
         for (NSInteger i = 0; i < tags.count; i ++) {
             [self updateFrameOfPoint:i direction:normalDirection andAngle:angle];
@@ -219,7 +224,6 @@
         CGPoint velocityP = [gesture velocityInView:self];
         velocity = sqrt(velocityP.x * velocityP.x + velocityP.y * velocityP.y);
         [self inertiaStart];
-        
     }
     
     

@@ -6,6 +6,7 @@ PODS:
     - FLAnimatedImage (~> 1.0)
     - SDWebImage (~> 4.0)
     - SDWebImage/GIF
+  - Masonry (1.1.0)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -29,6 +30,7 @@ PODS:
 DEPENDENCIES:
   - FDFullscreenPopGesture
   - KSPhotoBrowser
+  - Masonry
   - RxCocoa
   - RxDataSources
   - RxSwift
@@ -41,6 +43,7 @@ SPEC REPOS:
     - FDFullscreenPopGesture
     - FLAnimatedImage
     - KSPhotoBrowser
+    - Masonry
     - RxAtomic
     - RxCocoa
     - RxDataSources
@@ -54,6 +57,7 @@ SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   KSPhotoBrowser: 1f60c68401f34bcc223838c8592269b4a10a83bf
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
@@ -62,6 +66,6 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: a3df64be6b66c5b2ad41c7f8a200fbf0e0aad0b0
+PODFILE CHECKSUM: 840813a012ec67d16101262730238564472d0a5f
 
 COCOAPODS: 1.8.4

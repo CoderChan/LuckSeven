@@ -9,6 +9,7 @@ target 'LuckSeven' do
   pod 'SnapKit'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Masonry'
   pod 'RxDataSources'
   pod 'KSPhotoBrowser'
   pod 'YYKit'

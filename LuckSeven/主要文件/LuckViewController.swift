@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import YYKit.UIImage_YYAdd
 
 class LuckViewController: SuperViewController {
     
@@ -17,12 +18,20 @@ class LuckViewController: SuperViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .purple
+        self.view.backgroundColor = .white
         self.array = LocalmageManager.localArray()
         self.setupSubViews()
     }
     
     override func setupSubViews() {
+        
+        // 背景图
+        let image: UIImage = (UIImage(named: "home_bg")?.ks_imageByBlurLight())!
+        let backImgView: UIImageView = UIImageView(image: image)
+        backImgView.frame = self.view.bounds
+        self.view.addSubview(backImgView)
+        
+        // 抽奖的
         self.luckView = YoungSphere(frame: CGRect(x: 0, y: 64, width: self.view.width, height: self.view.width))
         var tempArray: [UIImageView] = NSMutableArray() as! [UIImageView]
         for (_, value) in self.array.enumerated() {
@@ -35,15 +44,17 @@ class LuckViewController: SuperViewController {
         self.luckView.setCloudTags(tempArray)
         self.view.addSubview(self.luckView)
         
+        // 退出按钮
         let returnImage: UIImage = UIImage(named: "return_btn")!
         let returnButton: UIButton = UIButton(type: .custom)
         returnButton.setBackgroundImage(returnImage, for: .normal)
         returnButton.setBackgroundImage(returnImage, for: .highlighted)
         returnButton.addBlock(for: .touchUpInside) { (sender) in
+            self.luckView.timerStop()
             let animation: CATransition = CATransition()
-            animation.duration = 0.8
+            animation.duration = 0.35
             animation.type = CATransitionType(rawValue: "cube")
-            animation.subtype = .fromBottom
+            animation.subtype = .fromLeft
             self.view.window?.layer.add(animation, forKey: nil)
             self.navigationController?.dismiss(animated: false, completion: nil)
         }
@@ -59,6 +70,20 @@ class LuckViewController: SuperViewController {
     
     override func handleBuness() {
         
+    }
+   
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.resultLuck()
+    }
+    
+    func resultLuck() {
+        let array: [LocalmageModel] = LocalmageManager.localArray()
+        let randomIndex: Int = Int(arc4random_uniform(UInt32(array.count)))
+        print("randomIndex = \(randomIndex)")
+        let model: LocalmageModel = array[randomIndex]
+        let resultView: LuckResultViewController = LuckResultViewController(iconName: model.name)
+        let nav: RootNavigationController = RootNavigationController(rootViewController: resultView)
+        self.present(nav, animated: false, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
