@@ -43,6 +43,9 @@ class LuckViewController: SuperViewController {
         }
         self.luckView.setCloudTags(tempArray)
         self.view.addSubview(self.luckView)
+        self.luckView.finishBlock = {
+            self.resultLuck()
+        }
         
         // 退出按钮
         let returnImage: UIImage = UIImage(named: "return_btn")!
@@ -73,7 +76,7 @@ class LuckViewController: SuperViewController {
     }
    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.resultLuck()
+//        self.resultLuck()
     }
     
     func resultLuck() {

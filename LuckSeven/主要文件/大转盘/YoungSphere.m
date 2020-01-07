@@ -12,7 +12,9 @@
 #import "LocalmageCollectionCell.h"
 
 @interface YoungSphere() <UIGestureRecognizerDelegate>
-
+{
+    BOOL isAutoTransform;
+}
 
 @end
 
@@ -174,6 +176,7 @@
 {
     [self timerStop];
     inertia.paused = NO;
+    isAutoTransform = YES;
     NSLog(@"开始");
 }
 
@@ -181,7 +184,13 @@
 {
     [self timerStart];
     inertia.paused = YES;
-    NSLog(@"停了");
+    if (isAutoTransform) {
+        NSLog(@"停了");
+        isAutoTransform = NO;
+        if (self.finishBlock) {
+            self.finishBlock();
+        }
+    }
 }
 
 - (void)inertiaStep

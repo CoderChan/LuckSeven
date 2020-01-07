@@ -40,7 +40,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    UIImageView *backImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"laugh"].imageByBlurSoft];
+    backImgView.frame = self.view.bounds;
+    [self.view addSubview:backImgView];
+    
     self.navigationController.navigationBar.hidden = YES;
     [self setupSubViews];
 }

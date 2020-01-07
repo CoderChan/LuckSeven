@@ -33,4 +33,6 @@
  */
 - (void)timerStop;
 
+@property (nonatomic, copy) void (^finishBlock)(void);
+
 @end
